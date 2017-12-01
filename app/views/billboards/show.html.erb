@@ -1,0 +1,11 @@
+<div class="songlist">
+<h1 class="white-text" ><%= @billboard.name %></h1>
+
+
+  <ol>
+    <% @songs.each do |song| %>
+      <li><%= link_to song.name, billboard_song_path(song), class: "white-text" %></li>
+    
+    <% end %>
+  </ol>
+</div>

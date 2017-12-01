@@ -1,0 +1,15 @@
+<div class="board">
+<h1 class="white-text">Edit Song: <%= @song.name %></h1>
+
+
+<%= form_for [@billboard, @song] do |f| %>
+  <%= f.label :name, class: "input-field, white-text" %>
+  <%= f.text_field :name, class: "input-field, white-text" %>
+
+  
+
+<% end %>
+
+<%= link_to 'Cancel', billboard_song_path(@song) %>
+</div>
+

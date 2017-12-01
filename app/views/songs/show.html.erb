@@ -1,0 +1,17 @@
+<div class="board">
+  
+    <h1 class="white-text"><strong>Song Info</strong></h1>
+
+    <h4 class="white-text">Song Title: <%= @song.name %></h4>
+    <h4 class="white-text">Release Date: <%= @song.releasedate %></h4>
+  
+
+  <div class='action-buttons'>
+    <%= link_to 'Edit', edit_billboard_song_path(@song) %>
+    <%= link_to 'Delete', billboard_song_path(@song), 
+            method: :delete, 
+            data: { confirm: 'Really Delete?' }
+      %> 
+    <%= link_to 'All Songs', billboard_songs_path %>
+  </div>
+<div/>

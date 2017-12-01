@@ -1,0 +1,11 @@
+<div class="board">
+<h1 class="white-text">ALL SONGS</h1>
+
+<% @songs.each do |song|%>
+  <h5>
+  <%= link_to song.name, billboard_songs_path(song) , class: "white-text" %>
+  </h5>
+<% end %>
+
+<%= link_to 'Add New Song', new_billboard_song_path %>
+</div>

@@ -1,0 +1,35 @@
+// Place all the styles related to the billboards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: url('nashville.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.board {
+  margin-left: 100px;
+  margin-top: 200px;
+  
+}
+
+.songlist{
+  margin-left: 100px;
+}
+
+ol {
+  list-style: none; counter-reset: li;
+}
+
+li::before {content: counter(li); color: white;
+  display: inline-block; width: 1em;
+  margin-left: -1em;
+  margin-right: 2em;
+}
+
+  li {
+    counter-increment: li;
+  }

@@ -1,0 +1,15 @@
+<div class="board">
+  <h1 class="white-text">New Song</h1>
+
+  <div class="white-text">
+  <%= form_for @song do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, required: true %>
+    <br />
+    <%= f.submit %>
+
+  <% end %>
+
+  <%= link_to 'All Posts', billboard_songs_path %>
+  </div>
+</div>
